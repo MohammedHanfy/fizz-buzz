@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div style="text-align:center">
+  <form>
+    <div class="form-group">
+      <label for="numbers">Please enter numbers only:</label>
+      <input type="numbers" [(ngModel)]="model.numbers" placeholder="numbers" name="numbers" id="numbers">
+    </div>
+  
+    <button (click)="play()">Play!</button>
+  </form>
+</div>
+<div style="text-align:center">
+  <h1>
+    Results are {{ results }}!
+  </h1>
+</div>
+<div style="text-align:center">
+  <h1>
+    {{ error }}
+  </h1>
+</div>
+
+
